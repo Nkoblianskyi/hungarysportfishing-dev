@@ -49,7 +49,7 @@ const species = [
     maxWeight: '100+ kg',
     maxLength: 'up to 3 m',
     difficulty: 'Very high',
-    desc: 'The catfish is the largest freshwater fish in Hungary and across Europe. The Danube and Tisza are home to legendary giants exceeding 100 kg. Targeting catfish is no ordinary fishing trip — it is a true adventure.',
+    desc: 'The catfish is the largest freshwater fish in Hungary and across Europe. The Danube and Tisza are home to legendary giants exceeding 100 kg. Targeting catfish is no ordinary fishing trip - it is a true adventure.',
     habitat: 'Deep holes in large rivers and sunken structures',
     season: 'May to October, peak on summer nights',
     bait: 'Large soft plastics, live bait, dead fish',
@@ -213,7 +213,7 @@ export default function FishSpeciesPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="font-serif text-3xl font-bold mb-4">Want more tips?</h2>
           <p className="text-primary-foreground/70 mb-8 max-w-xl mx-auto">
-            Read our blog — practical advice, tactics and fishing stories from experienced anglers.
+            Read our blog - practical advice, tactics and fishing stories from experienced anglers.
           </p>
           <Link
             href="/blog"

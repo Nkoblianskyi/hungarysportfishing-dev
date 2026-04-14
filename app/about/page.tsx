@@ -14,12 +14,12 @@ const values = [
   {
     icon: Compass,
     title: 'Reliable information',
-    desc: 'All content is verified by practitioners. We do not write theory — we share real experience from Hungarian waters.',
+    desc: 'All content is verified by practitioners. We do not write theory - we share real experience from Hungarian waters.',
   },
   {
     icon: BookOpen,
     title: 'Education & development',
-    desc: 'From beginner to expert — our content is valuable for anglers of every level of experience.',
+    desc: 'From beginner to expert - our content is valuable for anglers of every level of experience.',
   },
 ]
 
@@ -85,17 +85,17 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-20">
             <div>
               <h2 className="font-serif text-4xl font-bold text-foreground mb-4 text-balance">
-                Our mission — your successful session
+                Our mission - your successful session
               </h2>
               <div className="w-16 h-1 bg-accent rounded mb-6" />
               <p className="text-muted-foreground leading-relaxed mb-4">
                 Hungary Sport Fishing is an independent information resource dedicated to sport fishing in Hungary. We collect, verify and publish useful information about water bodies, fish species, fishing methods and the rules that govern angling in this remarkable country.
               </p>
               <p className="text-muted-foreground leading-relaxed mb-4">
-                Hungary holds a special place among Europe&apos;s anglers: the quality and variety of its waters, the diversity of fish and the accessibility for visiting anglers make it a true fishing paradise. Our aim is for every angler — from complete beginner to seasoned expert — to find everything they need here for a successful trip.
+                Hungary holds a special place among Europe&apos;s anglers: the quality and variety of its waters, the diversity of fish and the accessibility for visiting anglers make it a true fishing paradise. Our aim is for every angler - from complete beginner to seasoned expert - to find everything they need here for a successful trip.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                We represent no commercial interests whatsoever — only honest, practical experience and a genuine love of fishing.
+                We represent no commercial interests whatsoever - only honest, practical experience and a genuine love of fishing.
               </p>
             </div>
             <div className="relative">
@@ -136,7 +136,7 @@ export default function AboutPage() {
               <h2 className="font-serif text-4xl font-bold text-foreground mb-4">Get in touch</h2>
               <div className="w-16 h-1 bg-accent rounded mb-6" />
               <p className="text-muted-foreground leading-relaxed mb-8">
-                Have a question about fishing in Hungary? Want to share your own angling story or suggest a topic for an article? Write to us — we respond within 24–48 hours.
+                Have a question about fishing in Hungary? Want to share your own angling story or suggest a topic for an article? Write to us - we respond within 24–48 hours.
               </p>
               <div className="flex items-center gap-3 bg-card border border-border rounded-xl p-4 mb-6">
                 <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center shrink-0">

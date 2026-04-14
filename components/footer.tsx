@@ -88,7 +88,7 @@ export function Footer() {
 
         <div className="border-t border-white/10 mt-10 pt-6 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-white/40 text-xs">
-            &copy; {new Date().getFullYear()} hungarysportfishing.com — All rights reserved
+            &copy; {new Date().getFullYear()} hungarysportfishing.com - All rights reserved
           </p>
           <div className="flex items-center gap-4">
             <Link href="/privacy-policy" className="text-white/40 hover:text-white/70 text-xs transition-colors">

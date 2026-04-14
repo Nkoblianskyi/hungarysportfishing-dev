@@ -4,7 +4,7 @@ import { ChevronRight } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'Privacy Policy | Hungary Sport Fishing',
-  description: 'Privacy Policy of hungarysportfishing.com — how we collect, use and protect your personal data.',
+  description: 'Privacy Policy of hungarysportfishing.com - how we collect, use and protect your personal data.',
   robots: { index: false, follow: false },
 }
 

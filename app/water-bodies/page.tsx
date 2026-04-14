@@ -124,7 +124,7 @@ export default function WaterBodiesPage() {
             Water Bodies of Hungary
           </h1>
           <p className="text-white/80 text-xl max-w-2xl leading-relaxed">
-            A detailed guide to the best fishing spots — from Lake Balaton to the quiet ponds of the Hungarian plain.
+            A detailed guide to the best fishing spots - from Lake Balaton to the quiet ponds of the Hungarian plain.
           </p>
         </div>
       </section>

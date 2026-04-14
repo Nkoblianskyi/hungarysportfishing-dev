@@ -7,7 +7,7 @@ const sections = [
     href: '/fishing-types',
     icon: Waves,
     title: 'Fishing Types',
-    desc: 'From spinning to feeder fishing — discover all the popular techniques practised on Hungarian waters.',
+    desc: 'From spinning to feeder fishing - discover all the popular techniques practised on Hungarian waters.',
     image: '/images/fishing-types.jpg',
     tag: 'Techniques',
   },
@@ -23,7 +23,7 @@ const sections = [
     href: '/fish-species',
     icon: Fish,
     title: 'Fish Species',
-    desc: 'Carp, pike, catfish, zander — detailed profiles of the fish found in Hungarian waters, their habits and seasons.',
+    desc: 'Carp, pike, catfish, zander - detailed profiles of the fish found in Hungarian waters, their habits and seasons.',
     image: '/images/fish-species.jpg',
     tag: 'Species',
   },
@@ -66,7 +66,7 @@ export default function HomePage() {
             Fishing in Hungary
           </h1>
           <p className="text-lg sm:text-xl text-white/85 leading-relaxed mb-8 max-w-2xl mx-auto text-pretty">
-            Your complete guide to sport fishing in Hungary — from the finest water bodies to practical advice for anglers of every level.
+            Your complete guide to sport fishing in Hungary - from the finest water bodies to practical advice for anglers of every level.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
@@ -85,32 +85,15 @@ export default function HomePage() {
           </div>
         </div>
 
-        {/* Scroll indicator */}
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-white/60">
-          <span className="text-xs uppercase tracking-widest">Scroll down</span>
-          <div className="w-px h-10 bg-white/30 animate-pulse" />
-        </div>
+
       </section>
 
-      {/* STATS */}
-      <section className="bg-primary text-primary-foreground py-12">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
-            {stats.map((s) => (
-              <div key={s.label} className="text-center">
-                <div className="font-serif text-4xl font-bold text-accent mb-1">{s.value}</div>
-                <div className="text-primary-foreground/70 text-sm">{s.label}</div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* INTRO */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
         <div className="max-w-3xl">
           <h2 className="font-serif text-4xl font-bold text-foreground mb-4 text-balance">
-            Hungary — an angler&apos;s paradise
+            Hungary - an angler&apos;s paradise
           </h2>
           <div className="w-16 h-1 bg-accent rounded mb-6" />
           <p className="text-muted-foreground text-lg leading-relaxed text-pretty">
@@ -119,7 +102,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* PREVIEW SECTION 1 — Fishing Types (image right) */}
+      {/* PREVIEW SECTION 1 - Fishing Types (image right) */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
@@ -131,7 +114,7 @@ export default function HomePage() {
             </h2>
             <div className="w-14 h-1 bg-accent rounded mb-6" />
             <p className="text-muted-foreground text-lg leading-relaxed mb-4">
-              Hungary offers an extraordinary variety of sport fishing disciplines. Whether you prefer the patience of carp fishing on a quiet lake, the thrill of spinning for pike along the Danube, or the delicate art of fly fishing on clear tributaries — there is a technique for every angler.
+              Hungary offers an extraordinary variety of sport fishing disciplines. Whether you prefer the patience of carp fishing on a quiet lake, the thrill of spinning for pike along the Danube, or the delicate art of fly fishing on clear tributaries - there is a technique for every angler.
             </p>
             <p className="text-muted-foreground leading-relaxed mb-8">
               Our guide covers the most popular methods practised on Hungarian waters, including feeder fishing, night fishing, and ice fishing in winter. Each technique is explained with practical tips on gear, bait, and the best seasons.
@@ -154,7 +137,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* PREVIEW SECTION 2 — Water Bodies (image left, tinted bg) */}
+      {/* PREVIEW SECTION 2 - Water Bodies (image left, tinted bg) */}
       <section className="py-20 bg-muted">
         <div className="px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -175,7 +158,7 @@ export default function HomePage() {
               </h2>
               <div className="w-14 h-1 bg-accent rounded mb-6" />
               <p className="text-muted-foreground text-lg leading-relaxed mb-4">
-                From the vast shores of Lake Balaton to the mighty Danube and the winding Tisza, Hungary&apos;s waters are among the most productive fishing grounds in Central Europe. Every region offers something unique — deep reservoirs, slow rivers, oxbow lakes and managed fisheries.
+                From the vast shores of Lake Balaton to the mighty Danube and the winding Tisza, Hungary&apos;s waters are among the most productive fishing grounds in Central Europe. Every region offers something unique - deep reservoirs, slow rivers, oxbow lakes and managed fisheries.
               </p>
               <p className="text-muted-foreground leading-relaxed mb-8">
                 Our complete location guide covers accessibility, regulations, best spots, and what species you can expect to catch at each water body throughout the seasons.
@@ -191,7 +174,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* PREVIEW SECTION 3 — Fish Species (image right) */}
+      {/* PREVIEW SECTION 3 - Fish Species (image right) */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
@@ -203,7 +186,7 @@ export default function HomePage() {
             </h2>
             <div className="w-14 h-1 bg-accent rounded mb-6" />
             <p className="text-muted-foreground text-lg leading-relaxed mb-4">
-              Hungarian waters are home to an impressive range of freshwater species. Trophy common carp weighing over 30 kg, predatory pike lurking in the reeds, giant Wels catfish in deep river channels, and schooling zander in open lakes — the diversity is remarkable.
+              Hungarian waters are home to an impressive range of freshwater species. Trophy common carp weighing over 30 kg, predatory pike lurking in the reeds, giant Wels catfish in deep river channels, and schooling zander in open lakes - the diversity is remarkable.
             </p>
             <p className="text-muted-foreground leading-relaxed mb-8">
               Browse detailed profiles for each species: habitat, feeding behaviour, recommended tackle, record sizes, and the best time of year to target them.
@@ -226,7 +209,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* PREVIEW SECTION 4 — Blog & Tips (full-width dark bg with image) */}
+      {/* PREVIEW SECTION 4 - Blog & Tips (full-width dark bg with image) */}
       <section className="py-20 bg-primary">
         <div className="px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -277,7 +260,7 @@ export default function HomePage() {
             Have a question or want to share your experience?
           </h2>
           <p className="text-white/80 mb-8 leading-relaxed">
-            Get in touch — we are always happy to help and love hearing your fishing stories.
+            Get in touch - we are always happy to help and love hearing your fishing stories.
           </p>
           <Link
             href="/about#contact"

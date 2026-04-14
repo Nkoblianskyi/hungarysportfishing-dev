@@ -116,7 +116,7 @@ export default function FishingTypesPage() {
             Fishing Types in Hungary
           </h1>
           <p className="text-white/80 text-xl max-w-2xl leading-relaxed">
-            From carp to fly fishing — learn everything about the methods and techniques used by anglers on Hungarian waters.
+            From carp to fly fishing - learn everything about the methods and techniques used by anglers on Hungarian waters.
           </p>
         </div>
       </section>

@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
-import { ChevronRight, Clock, Tag, ArrowRight } from 'lucide-react'
+import { ChevronRight, Tag, ArrowRight } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'Blog & Tips | Hungary Sport Fishing',
@@ -10,62 +10,55 @@ export const metadata: Metadata = {
 }
 
 const featured = {
+  slug: 'spring-carp-fishing-tactics',
   title: 'Spring Carp Fishing: The Best Tactics for Hungarian Waters',
   excerpt:
     'Spring is the golden season for carp anglers. As carp emerge from winter lethargy and feed aggressively, choosing the right spot and bait can produce remarkable results. We share the key tactics and locations to make the most of it.',
   image: '/images/carp-fishing.jpg',
-  date: '10 April 2025',
-  readTime: '8 min',
   category: 'Tactics',
 }
 
 const posts = [
   {
+    slug: 'crankbaits-pike-balaton',
     title: 'Top 5 Crankbaits for Pike Fishing on Lake Balaton',
     excerpt: 'Which crankbait style works best in the shallow reed-lined bays of Balaton? We examine the key characteristics and conditions for each.',
     image: '/images/species-pike.jpg',
-    date: '2 April 2025',
-    readTime: '5 min',
     category: 'Tackle',
   },
   {
+    slug: 'feeder-fishing-beginners-guide',
     title: 'Feeder Fishing for Beginners: A Step-by-Step Guide',
-    excerpt: 'A detailed guide for anyone trying feeder fishing for the first time — from choosing the right rod to setting up a running rig.',
+    excerpt: 'A detailed guide for anyone trying feeder fishing for the first time - from choosing the right rod to setting up a running rig.',
     image: '/images/feeder-fishing.jpg',
-    date: '25 March 2025',
-    readTime: '10 min',
     category: 'Beginners',
   },
   {
+    slug: 'early-morning-fishing',
     title: 'Early Morning Fishing: Why the First Two Hours Are Everything',
     excerpt: 'Experienced anglers know it well: an early start is the key to success. Find out why fish are most active at dawn.',
     image: '/images/blog-morning.jpg',
-    date: '18 March 2025',
-    readTime: '6 min',
     category: 'Tips',
   },
   {
+    slug: 'catfish-rigs-tisza',
     title: 'Catfish Rigs for the River Tisza',
     excerpt: 'Hunting for giant catfish is a specialised pursuit. We cover the dedicated tackle, tactics and the best stretches of the Tisza.',
     image: '/images/species-catfish.jpg',
-    date: '10 March 2025',
-    readTime: '9 min',
     category: 'Tactics',
   },
   {
+    slug: 'fishing-knots-essential',
     title: 'Fishing Knots: 6 Essential Knots Every Angler Must Know',
     excerpt: 'A reliable knot is everything. We break down the 6 most important knots that every angler should have in their repertoire.',
     image: '/images/blog-knots.jpg',
-    date: '1 March 2025',
-    readTime: '7 min',
     category: 'Skills',
   },
   {
+    slug: 'groundbait-bream',
     title: 'Groundbait for Bream: Mix Recipes and Feeding Techniques',
     excerpt: 'The right groundbait can completely transform a session. We share proven groundbait recipes and feeding strategies for bream.',
     image: '/images/blog-tackle.jpg',
-    date: '22 February 2025',
-    readTime: '6 min',
     category: 'Beginners',
   },
 ]
@@ -99,7 +92,7 @@ const tips = [
   {
     number: '04',
     title: 'Silence is your ally',
-    desc: 'Fish are highly sensitive to vibrations. Walk quietly along the bank, avoid banging the boat — and your catches will improve noticeably.',
+    desc: 'Fish are highly sensitive to vibrations. Walk quietly along the bank, avoid banging the boat - and your catches will improve noticeably.',
   },
 ]
 
@@ -162,12 +155,10 @@ export default function BlogPage() {
           <div className="p-8 lg:p-10 flex flex-col justify-center bg-card">
             <div className="flex items-center gap-3 mb-4">
               <span className="bg-accent/20 text-accent text-xs font-semibold px-2.5 py-1 rounded-full">{featured.category}</span>
-              <span className="flex items-center gap-1 text-xs text-muted-foreground"><Clock className="w-3 h-3" />{featured.readTime}</span>
-              <span className="text-xs text-muted-foreground">{featured.date}</span>
             </div>
             <h3 className="font-serif text-2xl lg:text-3xl font-bold text-foreground mb-4 leading-snug text-balance">{featured.title}</h3>
             <p className="text-muted-foreground leading-relaxed mb-6 text-pretty">{featured.excerpt}</p>
-            <Link href="/blog" className="inline-flex items-center gap-2 text-primary font-semibold hover:gap-3 transition-all">
+            <Link href={`/blog/${featured.slug}`} className="inline-flex items-center gap-2 text-primary font-semibold hover:gap-3 transition-all">
               Read article <ArrowRight className="w-4 h-4" />
             </Link>
           </div>
@@ -208,13 +199,9 @@ export default function BlogPage() {
                 </span>
               </div>
               <div className="p-5 flex flex-col flex-1">
-                <div className="flex items-center gap-3 mb-3 text-xs text-muted-foreground">
-                  <span className="flex items-center gap-1"><Clock className="w-3 h-3" />{post.readTime}</span>
-                  <span>{post.date}</span>
-                </div>
                 <h3 className="font-serif text-lg font-bold text-foreground mb-2 leading-snug text-balance flex-1">{post.title}</h3>
                 <p className="text-muted-foreground text-sm leading-relaxed mb-4 text-pretty line-clamp-3">{post.excerpt}</p>
-                <Link href="/blog" className="inline-flex items-center gap-1 text-primary font-semibold text-sm hover:gap-2 transition-all">
+                <Link href={`/blog/${post.slug}`} className="inline-flex items-center gap-1 text-primary font-semibold text-sm hover:gap-2 transition-all">
                   Read more <ArrowRight className="w-3.5 h-3.5" />
                 </Link>
               </div>

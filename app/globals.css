@@ -83,3 +83,27 @@
     @apply bg-background text-foreground;
   }
 }
+
+@layer components {
+  .article-body h2 {
+    @apply font-serif text-2xl font-bold text-foreground mt-10 mb-4;
+  }
+  .article-body h3 {
+    @apply font-serif text-xl font-semibold text-foreground mt-8 mb-3;
+  }
+  .article-body p {
+    @apply text-muted-foreground leading-relaxed mb-5 text-pretty;
+  }
+  .article-body ul {
+    @apply list-disc pl-6 mb-5 space-y-2 text-muted-foreground leading-relaxed;
+  }
+  .article-body ol {
+    @apply list-decimal pl-6 mb-5 space-y-2 text-muted-foreground leading-relaxed;
+  }
+  .article-body strong {
+    @apply font-semibold text-foreground;
+  }
+  .article-body blockquote {
+    @apply border-l-4 border-accent pl-5 italic text-muted-foreground my-6;
+  }
+}

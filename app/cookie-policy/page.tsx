@@ -19,7 +19,7 @@ const cookieTypes = [
   {
     name: 'Analytical',
     required: false,
-    purpose: 'These help us understand how visitors interact with the Site — which pages are viewed most often and where difficulties arise.',
+    purpose: 'These help us understand how visitors interact with the Site - which pages are viewed most often and where difficulties arise.',
     examples: 'Anonymous visit statistics',
     retention: 'Up to 24 months',
   },
